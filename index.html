@@ -74,6 +74,10 @@
             /* border removed as requested */
             text-align: center;
             width: 400px;
+            border: 2px solid var(--table-color);
+            text-align: center;
+            height: 200px;
+            width: 400px;
         }
 
         table caption {
@@ -85,6 +89,19 @@
 
         tr:nth-child(even) {
             background-color: var(--row-bg-color);
+        }
+        .table-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        tr:hover {
+            background-color: #0073e6; /* Change background color on hover */
+            cursor: pointer;
+
+        }
+        p {
+            text-align: center;
         }
     </style>
 </head>
@@ -120,7 +137,7 @@
         </tr>
     </table>
     <p>
-        Source: https://en.wikipedia.org/wiki/List_of_best-selling_video_games
+        <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">List of Best Selling Games</a>
     </p>
 </body>
 
